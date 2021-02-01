@@ -1,8 +1,9 @@
 .row {
-  width: 992px;
+  /* width: 992px; */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  padding: 100px;
 }
 
 /* BLOCCO LEZIONI */
@@ -23,7 +24,13 @@
   text-align: center;
 }
 
-
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
 
 #steps {
   text-align: center;
@@ -34,6 +41,12 @@
   text-align: center;
 }
 
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
 
 #why .row img {
   background-color: #428bca;
@@ -58,4 +71,48 @@ img {
 
 .clear {
   clear: both;
+}
+
+/* MODIFICHE ALLA STRUTTURA 12 BOOL MQ MD */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  img {
+    height: 175px;
+  }
+  .row.row_1 {
+    background-color: #d1495b;
+  }
+
+  .row.row_2 {
+    background: #edae49;
+  }
+  .col-lg-4.col-xs-12 {
+  background: #edae49;
+}
+
+.col-lg-6.col-xs-12,
+.col-lg-12.col-xs-12 {
+  background-color: #d1495b;
+}
+
+}
+
+/* MODIFICHE ALLA STRUTTURA 12 BOOL MQ XS */
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    height: 150px;
+  }
+  .row.row_1 {
+    background-color: #f2f2cd;
+  }
+
+  .col-lg-6.col-xs-12,
+  .col-lg-12.col-xs-12 {
+    background-color: #f2f2cd;
+  }
 }
